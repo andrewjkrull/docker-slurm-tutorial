@@ -9,8 +9,10 @@ networks:
 
 x-node: &node
   build: .
+  privileged: true                          # add this
+  cgroup: host                              # add this (cgroupns=host)
   volumes:
-    - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    - /sys/fs/cgroup:/sys/fs/cgroup:rw      # ro -> rw
     - ./scratch:/scratch
   tmpfs:
     - /run
@@ -18,7 +20,7 @@ x-node: &node
   extra_hosts:
     - "control:172.19.0.2"
     - "node1:172.19.0.3"
-    - "node2:172.19.0.4"  
+    - "node2:172.19.0.4"
 
 services:
   control:
