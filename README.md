@@ -13,8 +13,9 @@ docker compose up --build -d --remove-orphans
 ```
 
 I was called by a buddy with questions about SLURM and I thought I would aquaint myself with it a bit more. I asked Claude for a quick run down and some break/fix options to test and see outcomes. Those files are:
-- slurm-cheatsheet.md
-- slurm-break-it-drills.md
+
+- [slurm-cheatsheet.md](slurm-cheatsheet.md)
+- [slurm-break-it-drills.md](slurm-break-it-drills.md)
 
 As of right now everything spins up and works. If you don't have ansible installed you can execute the ansible-palybook command by running my [docker-devops container](https://github.com/andrewjkrull/docker-devops) with the following command:
 
