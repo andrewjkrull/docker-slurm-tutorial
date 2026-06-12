@@ -3,3 +3,4 @@ ansible.log
 secrets
 munge.key
 *.out
+scratch/
