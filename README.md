@@ -6,7 +6,11 @@ After that you can go inside the containers and play with all the configurations
 
 # Andrew's Updates
 
-I updated the compose.yml to make use of cgroups v2 so the below command **docker compose up --build -d --remove-orphans** will now execute correctly.
+I updated the compose.yml to make use of cgroups v2 so the below command will now execute correctly. 
+
+```
+docker compose up --build -d --remove-orphans
+```
 
 I was called by a buddy with questions about SLURM and I thought I would aquaint myself with it a bit more. I asked Claude for a quick run down and some break/fix options to test and see outcomes. Those files are:
 - slurm-cheatsheet.md
